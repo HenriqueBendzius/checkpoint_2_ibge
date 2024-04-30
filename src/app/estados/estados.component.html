@@ -1,0 +1,39 @@
+
+<!-- <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Sigla</th>
+        <th>Nome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estado of estados">
+        <td>{{ estado.id }}</td>
+        <td>{{ estado.sigla }}</td>
+        <td>{{ estado.nome }}</td>
+      </tr>
+    </tbody>
+  </table>
+   -->
+
+   
+
+
+ <ul>
+    <li *ngFor="let estado of estados">
+      ID: {{ estado.id }}, Sigla: {{ estado.sigla }}, Nome: {{ estado.nome }}
+    </li>
+  </ul>
+  
+
+  <div class="card" *ngFor="let estado of estados">
+    <div class="card-header">
+      ID: {{ estado.id }}
+    </div>
+    <div class="card-body">
+      Sigla: {{ estado.sigla }}<br>
+      Nome: {{ estado.nome }}
+    </div>
+  </div>
+  
